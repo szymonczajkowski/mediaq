@@ -1,0 +1,74 @@
+.container-fluid {
+    width: 100%
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include sm {
+        width: 54rem;
+    }
+
+    @include md {
+        width: 72rem;
+    }
+
+    @include lg {
+        width: 96rem;
+    }
+
+    @include xl {
+        width: 114rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden-xs {
+    display: none;
+
+    @include sm {
+        display: block;
+    }
+}
+
+
+.hidden-sm {
+    @include sm {
+        display: none;
+    }
+
+    @include md {
+        display: block;
+    }
+}
+
+.hidden-md {
+    @include md {
+        display: none;
+    }
+
+    @include lg {
+        display: block;
+    }
+}
+
+.hidden-lg {
+    @include lg {
+        display: none;
+    }
+
+    @include xl {
+        display: block;
+    }
+}
+
+.hidden-xl {
+    @include xl {
+        display: none;
+    }
+}

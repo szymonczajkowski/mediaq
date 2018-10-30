@@ -1,0 +1,13 @@
+@import 'reset';
+@import 'media-queries';
+@import 'classes'; 
+@import 'navbar';
+@import 'header-main';
+
+body {
+    padding-top: 5rem;
+
+    @include md{
+        padding-top: 6rem;
+    }
+}
